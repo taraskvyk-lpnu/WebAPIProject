@@ -1,0 +1,73 @@
+2024-03-30 09:55:31.319 +02:00 [INF] User profile is available. Using 'C:\Users\tasik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-30 09:55:31.429 +02:00 [INF] Now listening on: https://localhost:7178
+2024-03-30 09:55:31.430 +02:00 [INF] Now listening on: http://localhost:5226
+2024-03-30 09:55:31.433 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-30 09:55:31.434 +02:00 [INF] Hosting environment: Development
+2024-03-30 09:55:31.435 +02:00 [INF] Content root path: D:\Тарас\Курси\Udemy\Web API ASP.NET Core\My Result\NZWalks\NZWalks\NZWalks.API
+2024-03-30 09:55:31.966 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7178/swagger/index.html - null null
+2024-03-30 09:55:32.145 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7178/swagger/index.html - 200 null text/html;charset=utf-8 179.4303ms
+2024-03-30 09:55:32.218 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7178/swagger/v1/swagger.json - null null
+2024-03-30 09:55:32.347 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7178/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.2077ms
+2024-03-30 09:55:36.157 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7178/api/regions - null null
+2024-03-30 09:55:36.183 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2024-03-30 09:55:36.201 +02:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:36.413 +02:00 [INF] Executing action method NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API) - Validation state: "Valid"
+2024-03-30 09:55:36.416 +02:00 [INF] GetAll Regions Action Method was invoked
+2024-03-30 09:55:37.495 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2024-03-30 09:55:37.583 +02:00 [INF] Finished GetAll Regions Method with data : [{"Id":"e924eb18-a9b4-4a5d-0b8c-08dc508e6b14","Code":"Lvv","Name":"Lviv","RegionImageUrl":"Lvvvviviviviv"},{"Id":"8c6f7f7c-0aa1-4ec9-0b8d-08dc508e6b14","Code":"Lvv","Name":"Lviv","RegionImageUrl":"Lvvvviviviviv"},{"Id":"12c0e0f9-88cf-462d-23f3-08dc508e9785","Code":"Kyi","Name":"Kyiv","RegionImageUrl":"fffff"},{"Id":"906cb139-415a-4bbb-a174-1a1faf9fb1f6","Code":"NSN","Name":"Nelson","RegionImageUrl":"https://images.pexels.com/photos/13918194/pexels-photo-13918194.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"f7248fc3-2585-4efb-8d1d-1c555f4087f6","Code":"AKL","Name":"Auckland","RegionImageUrl":"https://images.pexels.com/photos/5169056/pexels-photo-5169056.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"},{"Id":"14ceba71-4b51-4777-9b17-46602cf66153","Code":"BOP","Name":"Bay Of Plenty","RegionImageUrl":null},{"Id":"6884f7d7-ad1f-4101-8df3-7a6fa7387d81","Code":"NTL","Name":"Northland","RegionImageUrl":null},{"Id":"f077a22e-4248-4bf6-b564-c7cf4e250263","Code":"STL","Name":"Southland","RegionImageUrl":null},{"Id":"cfa06ed2-bf65-4b65-93ed-c9d286ddb0de","Code":"WGN","Name":"Wellington","RegionImageUrl":"https://images.pexels.com/photos/4350631/pexels-photo-4350631.jpeg?auto=compress\u0026cs=tinysrgb\u0026w=1260\u0026h=750\u0026dpr=1"}]
+2024-03-30 09:55:37.590 +02:00 [INF] Executed action method NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1171.4839ms.
+2024-03-30 09:55:37.601 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTO.RegionDTO, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-30 09:55:37.614 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API) in 1407.265ms
+2024-03-30 09:55:37.616 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.GetAll (NZWalks.API)'
+2024-03-30 09:55:37.626 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7178/api/regions - 200 null application/json; charset=utf-8 1468.5931ms
+2024-03-30 09:55:39.899 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:39.903 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:39.911 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:39.978 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:39.996 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 83.0618ms
+2024-03-30 09:55:39.997 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:39.998 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 98.6715ms
+2024-03-30 09:55:40.516 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:40.520 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:40.521 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:40.527 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:40.528 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 5.9314ms
+2024-03-30 09:55:40.529 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:40.530 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 14.4861ms
+2024-03-30 09:55:40.916 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:40.919 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:40.920 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:40.923 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:40.925 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 3.1736ms
+2024-03-30 09:55:40.926 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:40.927 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 10.8302ms
+2024-03-30 09:55:41.100 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:41.102 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.104 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:41.106 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:41.107 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 2.2826ms
+2024-03-30 09:55:41.109 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.110 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 9.6371ms
+2024-03-30 09:55:41.244 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:41.247 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.248 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:41.250 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:41.252 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 2.1638ms
+2024-03-30 09:55:41.253 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.254 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 9.4515ms
+2024-03-30 09:55:41.412 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:41.414 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.415 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:41.418 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:41.419 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 2.1999ms
+2024-03-30 09:55:41.420 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.421 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 9.4032ms
+2024-03-30 09:55:41.572 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7178/api/regions - application/json; charset=utf-8 47
+2024-03-30 09:55:41.574 +02:00 [INF] Executing endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.575 +02:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTO.AddRegionRequestDto) on controller NZWalks.API.Controllers.RegionsController (NZWalks.API).
+2024-03-30 09:55:41.577 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-03-30 09:55:41.578 +02:00 [INF] Executed action NZWalks.API.Controllers.RegionsController.Create (NZWalks.API) in 2.0403ms
+2024-03-30 09:55:41.579 +02:00 [INF] Executed endpoint 'NZWalks.API.Controllers.RegionsController.Create (NZWalks.API)'
+2024-03-30 09:55:41.580 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7178/api/regions - 400 null application/problem+json; charset=utf-8 8.3273ms

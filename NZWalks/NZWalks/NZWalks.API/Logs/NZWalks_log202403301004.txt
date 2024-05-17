@@ -1,0 +1,1 @@
+2024-03-30 10:04:59.887 +02:00 [INF] User profile is available. Using 'C:\Users\tasik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
